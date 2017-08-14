@@ -5,10 +5,15 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
+    {% if page.subtitle %}
+      <h3 class="post-subtitle">{{ page.subtitle }}</h3>
+    {% endif %}
   </header>
 
   <div class="post-content">
-    {{ content }}
+    <pre>
+      {{ content }}
+    </pre>
   </div>
 
 </article>
