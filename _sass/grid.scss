@@ -25,22 +25,39 @@
         opacity: 1;
         background-color: rgba(0, 0, 0, .5);
       }
-      .text {
+      .title, .tags {
         opacity: 1;
       }
     }
 }
 
-.grid-item .text {
+.grid-item .title {
   color: white;
+  opacity: 0;
+  transition: .2s;
+  position: absolute;
   font-size: 1.5em;
   text-align: center;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.grid-item .tags {
+  color: white;
   opacity: 0;
   transition: .2s;
+  position: absolute;
+  bottom: 0;
+  padding-left: 5px;
+  padding-bottom: 3px;
+}
+
+.badge {
+  background-color: red;
+  border-radius: 5px;
+  padding: 3px;
+  line-height: 1.9em;
 }
 
 .post-content {

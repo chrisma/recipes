@@ -8,8 +8,18 @@ layout: default
 
   <div class="grid">
     {% for recipe in site.recipes %}
-      <a class="grid-item" href="{{ recipe.url | relative_url }}" style="background-image: url({{ recipe.image }})">
-        <span class="text">{{ recipe.title | escape }}</span>
+      <a class="grid-item {{ recipe.tags | join: ' ' }}" href="{{ recipe.url | relative_url }}" style="background-image: url({{ recipe.image }})">
+        <span class="title">{{ recipe.title | escape }}</span>
+        <div class="tags">
+          {% for tag in recipe.tags %}
+            <span class="badge colored">{{ tag }}</span>
+            {% endfor %}
+            <span class="badge colored">foo</span>
+            <span class="badge colored">bar</span>
+            <span class="badge colored">something</span>
+            <span class="badge colored">else</span>
+            <span class="badge colored">baz</span>
+        </div>
       </a>
     {% endfor %}
   </div>
@@ -27,5 +37,21 @@ layout: default
       gutter: 10,
       fitWidth: true
     }
+  });
+
+  // Based on https://stackoverflow.com/questions/3426404#answer-21682946
+  function getColor(value) {
+    var hash = 0;
+    if (value.length == 0) return hash;
+    for (var i = 0; i < value.length; i++) {
+      hash = value.charCodeAt(i) + ((hash << 5) - hash);
+      hash = hash & hash; // Convert to 32bit integer
+    }
+    return "hsl(" + (hash+46) % 360 + ", 100%, 25%)";
+  };
+
+  $('.colored').each(function () {
+    var color = getColor($(this).text());
+    $(this).css('background-color', color);
   });
 </script>
