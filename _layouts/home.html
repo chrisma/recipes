@@ -6,18 +6,26 @@ layout: default
 
   {{ content }}
 
-  <ul class="post-list">
-
-    {% for post in site.recipes %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">Rezept</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
+  <div class="grid">
+    {% for recipe in site.recipes %}
+      <a class="grid-item" href="{{ recipe.url | relative_url }}" style="background-image: url({{ recipe.image }})">
+        <span class="text">{{ recipe.title | escape }}</span>
+      </a>
     {% endfor %}
-  </ul>
+  </div>
 
-</div>
+</div> <!-- div.home -->
+
+<script>
+  $('.grid').isotope({
+    // options
+    itemSelector: '.grid-item',
+    layoutMode: 'masonry',
+    masonry: {
+      // We recommend setting columnWidth.If columnWidth is not set, Isotope will use the outer width of the first item.
+      //columnWidth: 250
+      gutter: 10,
+      fitWidth: true
+    }
+  });
+</script>
