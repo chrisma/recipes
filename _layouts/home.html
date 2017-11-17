@@ -4,6 +4,15 @@ layout: default
 
 <div class="home">
 
+  {% assign all_tags = site.recipes | map: 'tags' | uniq %}
+  <ul class="button-group">
+    {% for tag in all_tags %}
+      <li>
+        <button class="large button">{{ tag }}</button>
+      </li>
+    {% endfor %}
+  </ul>
+
   {{ content }}
 
   <div class="grid">
@@ -16,7 +25,7 @@ layout: default
           {% endfor %}
         </div>
       </a>
-    {% endfor %}
+      {% endfor %}
   </div>
 
 </div> <!-- div.home -->
