@@ -8,12 +8,10 @@ layout: default
   <ul class="button-group">
     {% for tag in all_tags %}
       <li>
-        <button class="large button">{{ tag }}</button>
+        <button class="large button tag-select" data-filter=".{{ tag }}">{{ tag }}</button>
       </li>
     {% endfor %}
   </ul>
-
-  {{ content }}
 
   <div class="grid">
     {% for recipe in site.recipes %}
@@ -58,4 +56,22 @@ layout: default
     var color = getColor($(this).text());
     $(this).css('background-color', color);
   });
+
+  // store filter for each group
+  var filters = [];
+
+  $('.tag-select').on('click', function () {
+    var $this = $(this);
+    $this.toggleClass('active-toggle');
+    var filter = $this.attr('data-filter');
+    var index = filters.indexOf(filter);
+    if (index > -1) {
+      filters.splice(index, 1);
+    } else {
+      filters.push(filter);
+    }
+    var filterValue = filters.join('');
+    $('.grid').isotope({ filter: filterValue });
+  });
+
 </script>
