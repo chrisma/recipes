@@ -5,13 +5,15 @@ layout: default
 <div class="home">
 
   {% assign all_tags = site.recipes | map: 'tags' | uniq %}
-  <ul class="button-group">
-    {% for tag in all_tags %}
-      <li>
-        <button class="large button tag-select" data-filter=".{{ tag }}">{{ tag }}</button>
-      </li>
-    {% endfor %}
-  </ul>
+  <div id="tag-selection">
+    <ul class="button-group">
+      {% for tag in all_tags %}
+        <li>
+          <button class="large button tag-select" data-filter=".{{ tag }}">{{ tag }}</button>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 
   <div class="grid">
     {% for recipe in site.recipes %}
