@@ -2,7 +2,7 @@
 layout: recipe
 title: Quiche
 subtitle:
-image: img/placeholder.png
+image: img/quiche1.jpg
 tags:
  - Gruppen
  - Kuchen
