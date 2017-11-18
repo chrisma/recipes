@@ -2,7 +2,7 @@
 layout: recipe
 title: Ruchis Paneer Mattar
 subtitle:
-image: img/apfel_pancakes.jpg
+image: img/placeholder.png
 tags:
  - indisch
 ---
