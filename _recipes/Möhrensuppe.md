@@ -2,7 +2,7 @@
 layout: recipe
 title: Karotten-Kokos-Ingwer-Suppe
 subtitle:
-image: img/placeholder.png
+image: img/karotten_ingwer_kokos_suppe.jpg
 tags:
  - Suppe
 ---
@@ -16,6 +16,6 @@ tags:
 **Chilli**,
 **Honig / braunen Zucker**,
 **Currypulver**,
-**Kümmel** und anderen 
+**Kümmel** und anderen
 **indischen Gewürzen** abschmecken und kochen lassen bis das Gemüse weich ist. Dann pürieren.
 **Kokosnussmilch (eine Dose)**  dazugeben, ggf. etwas übrig lassen, zum garnieren.
