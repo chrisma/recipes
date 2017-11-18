@@ -16,4 +16,4 @@ Den Saft aus dem
 **1TL Sojasoße**,
 **Scharfe Soße** (zb Gochuang) nach Geschmack und Kimchisaft zusammenmischen und darübergießen. Gut verteilen. Am besten mit 
 **Frühlingszwiebeln** und einem
-**Spielei** oben drauf servieren.
+**Spiegelei** oben drauf servieren.
