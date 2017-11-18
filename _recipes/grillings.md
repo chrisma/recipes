@@ -2,7 +2,7 @@
 layout: recipe
 title: Grillings
 subtitle:
-image: img/placeholder.png
+image: img/grill.jpg
 tags:
  - Gruppen
  - Sommer
@@ -19,6 +19,6 @@ tags:
 **Kräuter** dazugießen, Beutel verschließen, gut durchschütteln, in den Kühlschrank tun.
 **Holzspieße** in Wasser stellen, sodass sie nicht anbrennen. Gemüse auf die Spieße stecken, grillen.
 
-**Champignons**, Stamm herausbrechen, mit 
-**Knoblauchbutter** (nicht Kräuterbutter! Das ist nicht halb so lecker!) füllen, in 
+**Champignons**, Stamm herausbrechen, mit
+**Knoblauchbutter** (nicht Kräuterbutter! Das ist nicht halb so lecker!) füllen, in
 **Alufolie** wickeln, grillen.
