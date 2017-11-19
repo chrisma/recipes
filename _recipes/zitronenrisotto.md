@@ -4,8 +4,7 @@ title: Zitronenrisotto
 subtitle:
 image: img/placeholder.png
 tags:
- - Gruppen
- - Kuchen
+ - fancy
 ---
 
 **Zwiebel (1 mittelgroße)** würfeln, in Öl kurz anschwitzen,
@@ -17,5 +16,5 @@ tags:
 **Butter (25g)**,
 **Parmesan (25g)**,
 **Petersilie (1 Bund)**, fein gehackt, unterrühren. Mit
-**Salz & Pfeffer** abschmecken. Dazu passt gut scharf gebratenes 
+**Salz & Pfeffer** abschmecken. Dazu passt gut scharf gebratenes
 *Lachsfilet*.
